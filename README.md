@@ -7,3 +7,21 @@ Creating a *fork* is producing a personal copy of someone else's project. Forks 
 After forking this repository, you can make some changes to the project, and submit [a Pull Request](https://github.com/octocat/Spoon-Knife/pulls) as practice.
 
 For some more information on how to fork a repository, [check out our guide, "Forking Projects""](http://guides.github.com/overviews/forking/). Thanks! :sparkling_heart:
+
+
+シーケンス図作成用Markdownライブラリ「js-sequence-diagrams」の検証...
+
+```sequence
+Alice->Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob-->Alice: I am good thanks!
+```
+
+```sequence
+Title: アプリケーションサービス・シーケンス
+ユーザー->クライアントアプリ: アプリ起動
+クライアントアプリ-->OAUTH認証先: ログイン
+OAUTH認証先->>WEBアプリケーション: 認証OK
+WEBアプリケーション->WEBアプリケーション: データベース\nとのやり取り等\n各種処理
+WEBアプリケーション-->>ユーザー: ログイン認証完了・セッション開始
+```
